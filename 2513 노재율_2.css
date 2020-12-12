@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'content';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'school_num';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  p.title {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family : title;
+    font-size : 50px;
+  }
+  
+  p.school_num {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family : school_num;
+    font-size : 18px;
+    margin : 0px;
+  }
+  
+  .wrapper {
+    margin: 80px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  .btn3 {
+    padding: 15px 100px;
+    margin:10px 4px;
+    color: black;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  
+  .btn3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(255, 212, 219);
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .btn3:hover::before{
+    opacity: 1;
+    background-color: rgb(253, 208, 216);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./2513 노재율_1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./top.js"></script>
+    <link rel="shortcut icon" href="./dimigo.png">
+    <title>2513 노재율 정보통신</title>
+</head>
+    <body>
+        <i class="fas fa-chevron-up"></i>
+        <p class="title">정보통신 수행평가</p>
+        <p class="school_num">2513 노재율</p>
+        <div class="wrapper">
+            
+             <a href="2513 노재율_1.html" class="btn3">
+              handwriting
+            </a>
+              <a href="2513 노재율_2.html" class="btn3">
+              practice_1
+            </a>
+              <a href="2513 노재율_3.html" class="btn3">
+              practice_2
+            </a>
+        </div>
+        <div class="container">
+            <div class="small_container">
+                <p class="content">
+                4계층 : TCP / UDP <br>
+                3계층 : IP, ARP, RARP, IGMP, ICMP
+                </p>
+
+                <p class="content">
+                    TTL : 라우터의 한 홉(Hop)을 통과할 때마다 TTL 값이 1씩 감소한다.
+                </p>
+                <p class="content">
+                    IPv4 (32비트, 4바이트)
+                </p>
+                <p class="content">
+                    유니캐스트 : 한 명 한테만 보냄 <br>
+                    멸티캐스트 : 여러명한테 보냄 <br>
+                    브로드캐스트 : 네트워크 전체에 보냄
+                </p>
+                <p class="content">
+                    A&nbsp;&nbsp;&nbsp;0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┐   <br>
+                    B&nbsp;&nbsp;&nbsp;1 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 사용  <br>
+                    C&nbsp;&nbsp;&nbsp;1 1 0 ┘   <br>
+                    D&nbsp;&nbsp;&nbsp;1 1 1 0 - 멀티캐스트<br>
+                    E&nbsp;&nbsp;&nbsp;1 1 1 1 - 연구용
+                </p>
+                <div class="small_contai">
+                    <div class="small_conta">
+                        <p class="content">
+                            A : 10.x.x.x <br>
+                            B : 172.16.x.x ~ 172.31.x.x <br>
+                            C : 192.168.x.x <br>
+                            D : 224.x.x.x
+                        </p>
+                        <p class="content">
+                            NAT 장점 <br>
+                            1. 공인 IP주소를 절약함 <br>
+                            2. 보안이 됌. (사설 IP를 찾아낼 수 없으니까)
+                        </p>
+                        <p class="content">
+                            PORT NUM <br>
+                            21 : ftp <br>
+                            22 : ssh <br>
+                            23 : telnet <br>
+                            25 : SMTP <br>
+                            53 : DNS <br>
+                            80 : http <br>
+                            443 : https <br> <br>
+                            #DNS만 TCP와 UDP를 쓸 수 있고, 나머지는 다 TCP를 씀
+                        </p>
+                        <p class="content">
+                            SNMP <br>
+                            1. UDP를 씀<br>
+                            2. 문제를 발견해줌 (오류제어를 해주진 않음)
+                        </p>
+                    </div>
+                    <div class="small_cont">
+                        <p class="content">
+                            SSH_1은 RSA 암호화를 사용한다. <br>
+                            SSH_2는 RSA 외 더 다양한 키 쿄환방식을 지원함.
+                        </p>
+                        <p class="content">
+                            UDP 패킷 헤더<br>
+                            1. Source Port <br>
+                            2. Destination Port <br>
+                            3. Checksum <br>
+                            4. Packet Length
+                        </p>
+                        <p class="content">
+                            CMD에서 'nslookup [도메인]' 명령어는 도메인의 IP를 출력해줌.
+                        </p>
+                        <p class="content">
+                            <보기>에 유리, 빛이 나오는 전송매체는 <br>
+                            Optical Fiber (광케이블) 이다.
+                        </p>
+                        <p class="content">
+                            ┌RIP : 거리우선 패킷 (최대 15홉을 못 넘음) <br>
+                            └OSPF <br>
+                            이거 둘 중 하나가 나오면 둘 중 하나가 답
+                        </p>
+                        <p class="content">
+                            회선교환 : 1:1로만 교환
+                            패킷교환 : 여러명이서 교환
+                        </p>
+                        <p class="content">
+                            IPv6 <br>
+                            1. IPv4에 비해 보안기능 up <br>
+                            2. 주소의 길이가 128bit임 <br>
+                            3. 패킷을 멀티캐스트로 사용함. <br>
+                            4. IPv4에 비해 패킷이 단순함.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="handshaking">
+                <p class="handshaking">3 Handshaking</p>
+                <img class="handshaking" src="./handshaking.png" alt="3way handshaking">
+            </div>
+        </div>
+
+    </body>
+</html>
